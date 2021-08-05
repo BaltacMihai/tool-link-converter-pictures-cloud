@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SCSS/design.css" />
     <title>Google Drive Image URL Converter</title>
   </head>
   <body>
@@ -11,18 +12,28 @@
       <div class="proccesUrl">
         <form>
           <label for="toConvert">Link to convert:</label>
-          <input type="url" id="toConvert" name="toConvert" />
+          <div class="row">
+            <input type="url" id="toConvert" name="toConvert" />
+            <button type="button" onclick="getUrl()">Convert</button>
+          </div>
         </form>
-
-        <button onclick="getUrl()">Convert</button>
       </div>
       <div class="displayUrl">
         <form>
           <label for="converted">The converted link:</label>
-          <input type="url" id="converted" name="converted" />
+
+          <div class="row">
+            <input type="url" id="converted" name="converted" />
+
+            <button type="button" onclick="copyToClipboard()">
+              Copy to Clipboard
+            </button>
+          </div>
         </form>
-        <button onclick="copyToClipboard()">Copy to Clipboard</button>
       </div>
+    </div>
+    <div id="pop_up">
+            <p>Link copied in the Clipboard</p>
     </div>
     <script src="JS/convert.js"></script>
     <script src="JS/main.js"></script>
