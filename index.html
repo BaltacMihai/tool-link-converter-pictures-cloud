@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Drive Image URL Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="proccesUrl">
+        <form>
+          <label for="toConvert">Link to convert:</label>
+          <input type="url" id="toConvert" name="toConvert" />
+        </form>
+
+        <button onclick="getUrl()">Convert</button>
+      </div>
+      <div class="displayUrl">
+        <form>
+          <label for="converted">The converted link:</label>
+          <input type="url" id="converted" name="converted" />
+        </form>
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+      </div>
+    </div>
+    <script src="JS/convert.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
