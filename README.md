@@ -1,5 +1,5 @@
 # :cloud: Google photo embeded Url :cloud:
-In some projects I did I faced the problem that the URL of the pictures on google drive does not work. After looking for a solution I discovered that you need to change the URL. This became very frustrating when I had to always change the URL when testing.
+In some projects I did, I faced the problem that the URL of the pictures on google drive does not work. After looking for a solution I discovered that you need to change the URL. This became very frustrating when I had to always change the URL when testing.
 That's how I came up with this tool.
 
 There are other sites that can do this, but they do not provide a script to transform your URL.
